@@ -8,7 +8,7 @@ Many years ago, I used to work at a magazines related company (hi ACP Magazines 
 
 Its always good to help keep the team morale high, and to help with that so I installed a USB notification light in our pod in the office. Then, every time there was a sale the light glowed yellow like gold. Good times :) 
 
-![[delcomLightAboveDesks.png]]
+![](/assets/images/delcomLightAboveDesks.png)
 
 
 
@@ -17,7 +17,7 @@ You may want to do something similar. Read on to find out how it all works!
 # Behold: the Delcom 904017-B!
 
 Matching the industrial name of the [Delcom 9040170-B](https://www.delcomproducts.com/products_USBLMP.asp), the light itself is also industrial in appearance. While not a beauty, it is sturdy: mine has lasted for 10+ years.
-![[delcomLight.png]]
+![](/assets/images/delcomLight.png)
 
 In addition to being durable, it also comes with [example code](https://www.delcomproducts.com/productdetails.asp?PartNumber=900000) showing you how to use it. I don't know about you, but my C++ and VB.Net is a bit rusty though. Time for a more modern language
 

@@ -13,9 +13,9 @@ Delcom doesn't provide a nice container for the light, as far as I'm aware.
 Years ago when 3d printing was just getting going, I downloaded a "Makies Cauldron". It had a Creative Commons Attribution license and you can find it here: https://www.thingiverse.com/thing:178670 . 
 
 The provided STL file looks a bit like this:
-![[cauldronSTL.png]]
+![](/assets/images/cauldronSTL.png)
 
-![[MAKIES_Cauldron.stl]]
+[Download MAKIES_Cauldron.stl](/assets/images/MAKIES_Cauldron.stl)
 
 Its a good start, but there are two issues
 1. What do we do with the USB cable? Will I put the light into the cauldron and have the cable snake its way out the top? That's not great. I think we should cut out a small rectangle so that the USB-A cable can fit through it
@@ -50,7 +50,7 @@ Please generate a CadQuery script for me and I'll apply the script at my side to
 </details>
 
 Then, as VSCode is my tool of choice, I installed the "OCP CAD Viewer" extension in VSCode and had Claude maniuplate the Python file. Claude is more than happy to code in Python. I would take a screenshot of the current state of the model, tell it what I wanted to be changed and it would update the Python script to change the STL file. OCP CAD Viewer would then display the updated STL file:
-![[vscodeCad.png]]
+![](/assets/images/vscodeCad.png)
 
 There was a LOT of back and forth but we got there in the end.
 # The model is ready. How to print?
@@ -63,4 +63,4 @@ Watch this space! I'll upload a photo shortly
 
 # Final thoughts
 Having the Delcom usb light in its cauldron seems to have fulfilled some long-buried cultural desire from my Irish background: I finally have my very own... Pot of Gold!
-![[potOfGold.png]]
+![](/assets/images/potOfGold.png)
