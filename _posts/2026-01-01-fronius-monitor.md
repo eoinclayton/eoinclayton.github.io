@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: Solar Monitor
 date: 2026-01-01
 ---

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: Delcom Cauldron
 date: 2026-03-01
 ---
