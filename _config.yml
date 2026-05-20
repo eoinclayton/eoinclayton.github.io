@@ -1,0 +1,17 @@
+title: Blog
+email: eoinclayton@hotmail.com
+description: >-
+  Occasional notes on software, systems, and the parts that don't
+  fit neatly in the docs.
+url: "https://eoinclayton.github.io"
+baseurl: ""
+
+author: Eoin Clayton
+
+theme: jekyll-theme-midnight
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+permalink: /:year/:month/:day/:title/
