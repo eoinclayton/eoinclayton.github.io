@@ -3,6 +3,10 @@
 
 @import "{{ site.theme }}";
 
+header .btn {
+  display: none;
+}
+
 .post-list {
   display: flex;
   flex-direction: column;
