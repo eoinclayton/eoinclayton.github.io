@@ -3,6 +3,50 @@
 
 @import "{{ site.theme }}";
 
+.post-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin-top: 2em;
+}
+
+.post-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 1em 1.2em;
+  border: 1px solid #444;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.post-card:hover {
+  border-color: #9ddcff;
+  background: rgba(157, 220, 255, 0.05);
+}
+
+.post-card .post-title {
+  color: #9ddcff;
+  font-size: 1.1em;
+}
+
+.post-card .post-date {
+  color: #888;
+  font-size: 0.85em;
+  white-space: nowrap;
+  margin-left: 1em;
+}
+
 details {
   margin-bottom: 1.5em;
+}
+
+details summary {
+  color: #9ddcff;
+  cursor: pointer;
+}
+
+details summary:hover {
+  text-decoration: underline;
 }
