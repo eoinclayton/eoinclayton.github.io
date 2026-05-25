@@ -105,4 +105,4 @@ You can then run the script on a schedule on your Mac and it will tell you when 
 
 # Optional Addition
 If you are interested in this type of geeky stuff, I'd suggest that you bring this to the next level. I, for example, run mine using a cron schedule (every 30 minutes during the day) on my [Raspberry Pi Zero](https://www.raspberrypi.com/products/raspberry-pi-zero/). I like the Zero as it uses 0.5 watts when it is running normally and peaks at about 2 watts when under heavy usage. Its so efficient that I leave it running 24/7 without worrying about it wasting electricity.
-![[/assets/images/raspberryPiZero.png|251]]
+![391](/assets/images/raspberryPiZero.png)
