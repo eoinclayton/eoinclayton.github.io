@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Delcom Cauldron
+title: 3D Printing
 date: 2026-03-01
 ---
 # Intro
 A previous post described how I use a Delcom USB light to alert me to workplace notifications: PRs ready for review, Production incidents underway, etc.
 
-The light works great, its just very... industrial... looking though. Lets see if we can have it look better! 
+The light works great, it's just very... industrial... looking though. Lets see if we can have it look better! 
 
 # 3D Printing
 Delcom doesn't provide a nice container for the light, as far as I'm aware.
@@ -17,7 +17,7 @@ The provided STL file looks a bit like this:
 
 [Download MAKIES_Cauldron.stl](/assets/images/MAKIES_Cauldron.stl)
 
-Its a good start, but there are two issues
+It's a good start, but there are two issues
 1. What do we do with the USB cable? Will I put the light into the cauldron and have the cable snake its way out the top? That's not great. I think we should cut out a small rectangle so that the USB-A cable can fit through it
 2. If I put the light in the cauldron, the cauldron walls will block the light. I think we should do a cut-out from one side of the cauldron
 
@@ -32,7 +32,7 @@ No prob Claude, next up was Copilot. It seemed almost excited, if that is possib
 ...and later on while it was thinking: 
 > "Nice, this is a fun little build"
 
-After much back and forth with the AIs, It turns out that they prefer dealing with something called CADQuery. CADQuery a Python library for manipuldating STL files. You have the STL file yourself, the AI generates the Python code to manipulate the STL and the resulting output should hopefully be what you want. 
+After much back and forth with the AIs, It turns out that they prefer dealing with something called CADQuery. CADQuery is a Python library for manipulating STL files. You have the STL file yourself, the AI generates the Python code to manipulate the STL and the resulting output should hopefully be what you want. 
 
 As Copilot seemed excited to help, I used its help to generate the initial CADQuery Python file for updating the cauldron.
 
@@ -49,12 +49,12 @@ Please generate a CadQuery script for me and I'll apply the script at my side to
 </ol>
 </details>
 
-Then, as VSCode is my tool of choice, I installed the "OCP CAD Viewer" extension in VSCode and had Claude maniuplate the Python file. Claude is more than happy to code in Python. I would take a screenshot of the current state of the model, tell it what I wanted to be changed and it would update the Python script to change the STL file. OCP CAD Viewer would then display the updated STL file:
+Then, as VSCode is my tool of choice, I installed the "OCP CAD Viewer" extension in VSCode and had Claude manipulate the Python file. Claude is more than happy to code in Python. I would take a screenshot of the current state of the model, tell it what I wanted to be changed and it would update the Python script to change the STL file. OCP CAD Viewer would then display the updated STL file:
 ![](/assets/images/vscodeCad.png)
 
 There was a LOT of back and forth but we got there in the end.
 # The model is ready. How to print?
-Once your STL file is ready, its time to print! I don't have a 3D printer at home, so I found an online service. As I live in Canberra, Australia, I went with this local provider: https://3dprintingcanberra.com.au/. 
+Once your STL file is ready, it's time to print! I don't have a 3D printer at home, so I found an online service. As I live in Canberra, Australia, I went with this local provider: https://3dprintingcanberra.com.au/. 
 I uploaded the model, chose PETG in black as the "filament" (i.e. the material for making the cauldron) and soon the model was ready for collection.
 
 # How does it look?
