@@ -6,19 +6,22 @@ date: 2026-03-01
 # Intro
 A previous post described how I use a Delcom USB light to alert me to workplace notifications: PRs ready for review, Production incidents underway, etc.
 
-The light works great, it's just very... industrial... looking though. Lets see if we can have it look better! 
+The light works great, it's just very... industrial... looking. 
+![312](/assets/images/delcomLight.png)
+
+Lets see if we can make it look better! 
 
 # 3D Printing
 Delcom doesn't provide a nice container for the light, as far as I'm aware.
-Years ago when 3d printing was just getting going, I downloaded a "Makies Cauldron". It had a Creative Commons Attribution license and you can find it here: https://www.thingiverse.com/thing:178670 . 
+Years ago when 3d printing was just getting going, I downloaded a "Makies Cauldron" model. It has a Creative Commons Attribution license and you can find it here: https://www.thingiverse.com/thing:178670 . 
 
-The provided STL file looks a bit like this:
+The model in the provided STL file looks a bit like this:
 ![](/assets/images/cauldronSTL.png)
 
 [Download MAKIES_Cauldron.stl](/assets/images/MAKIES_Cauldron.stl)
 
 It's a good start, but there are two issues
-1. What do we do with the USB cable? Will I put the light into the cauldron and have the cable snake its way out the top? That's not great. I think we should cut out a small rectangle so that the USB-A cable can fit through it
+1. What do we do with the USB cable? Will I put the light into the cauldron and have the cable snake its way out the top? That's not great. I think we should cut out a small rectangle so that the USB-A cable can fit through the hole
 2. If I put the light in the cauldron, the cauldron walls will block the light. I think we should do a cut-out from one side of the cauldron
 
 10 years ago, I did the edits myself in a Blender style tool. Times have changed though so lets see what the AIs can do today
@@ -30,7 +33,9 @@ No prob Claude, next up was Copilot. It seemed almost excited, if that is possib
 > "Nice project! — turning a status light into a little cauldron is very on-brand geek magic."
 
 ...and later on while it was thinking: 
-> "Nice, this is a fun little build"
+> "Nice, this is a fun little build" 
+
+😂
 
 After much back and forth with the AIs, It turns out that they prefer dealing with something called CADQuery. CADQuery is a Python library for manipulating STL files. You have the STL file yourself, the AI generates the Python code to manipulate the STL and the resulting output should hopefully be what you want. 
 
