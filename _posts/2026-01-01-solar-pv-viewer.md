@@ -3,8 +3,6 @@ layout: post
 title: Solar PV Viewer
 date: 2026-01-01
 ---
-# Intro
-
 I am fortunate enough to have a solar system on my house to help with power bills. The other members of the household ask me every now and then about solar and want to know if we are generating enough to power the house. Rather than keep asking Dad, better if they are empowered to work it out for themselves. Time for a Solar Monitor!
 
 # The magic that is an inverter

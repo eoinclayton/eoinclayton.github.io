@@ -3,7 +3,6 @@ layout: post
 title: Home Battery Monitor
 date: 2026-04-01
 ---
-# Intro
 The Australian Government is currently (2026) providing a [Cheaper Home Batteries Program](https://www.dcceew.gov.au/energy/programs/cheaper-home-batteries) scheme to help with home battery adoption. The more houses that install home batteries, the less pressure there will be on the electrical grid and so hopefully electricity prices will drop for all.
 Using the program, we added a FoxESS home battery to the house and it has been great: we haven't needed to draw much electricity from the grid for 4+ months and ended up supplying energy to the grid when the grid needed it. 
 Now that it's winter in Canberra, Australia (think cold and gloomy), the battery does sometimes run low and during those periods I want to know when it has run out of charge so that I can adjust my usage (e.g. avoid the dryer!).

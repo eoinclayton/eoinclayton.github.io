@@ -3,7 +3,6 @@ layout: post
 title: 3D Printing
 date: 2026-03-01
 ---
-# Intro
 A previous post described how I use a Delcom USB light to alert me to workplace notifications: PRs ready for review, Production incidents underway, etc.
 
 The light works great, it's just very... industrial... looking. 
