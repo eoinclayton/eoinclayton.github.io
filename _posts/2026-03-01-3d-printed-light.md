@@ -10,7 +10,7 @@ The light works great, it's just very... industrial... looking.
 
 Lets see if we can make it look better! 
 
-# 3D Printing
+## 3D Model
 Delcom doesn't provide a nice container for the light, as far as I'm aware.
 Years ago when 3d printing was just getting going, I downloaded a "Makies Cauldron" model. It has a Creative Commons Attribution license and you can find it here: https://www.thingiverse.com/thing:178670 . 
 
@@ -24,7 +24,7 @@ It's a good start, but there are two issues
 2. If I put the light in the cauldron, the cauldron walls will block the light. I think we should do a cut-out from one side of the cauldron
 
 10 years ago, I did the edits myself in a Blender style tool. Times have changed though so lets see what the AIs can do today
-# Time for CADQuery
+## Time for CADQuery
 I tried Claude first, but it refused to deal with the .stl file: 
 > "No, I can't meaningfully edit STL files. STL files contain raw 3D mesh geometry (thousands of triangular facets) and modifying them requires specialized 3D modeling software"
 
@@ -57,14 +57,14 @@ Then, as VSCode is my tool of choice, I installed the "OCP CAD Viewer" extension
 ![](/assets/images/vscodeCad.png)
 
 There was a LOT of back and forth but we got there in the end.
-# The model is ready. How to print?
+## The model is ready. How to print?
 Once your STL file is ready, it's time to print! I don't have a 3D printer at home, so I found an online service. As I live in Canberra, Australia, I went with this local provider: https://3dprintingcanberra.com.au/. 
 I uploaded the model, chose PETG in black as the "filament" (i.e. the material for making the cauldron) and soon the model was ready for collection.
 
-# How does it look?
+## How does it look?
 
 Watch this space! I'll upload a photo shortly
 
-# Final thoughts
+## Final thoughts
 Having the Delcom usb light in its cauldron seems to have fulfilled some long-buried cultural desire from my Irish background: I finally have my very own... Pot of Gold!
 ![](/assets/images/potOfGold.png)

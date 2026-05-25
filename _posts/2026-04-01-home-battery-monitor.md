@@ -9,7 +9,7 @@ Now that it's winter in Canberra, Australia (think cold and gloomy), the battery
 
 > **Note:** For those who are interested in getting a battery, it looks like for us the battery will supply the house comfortably for 9+ months of the year, and then reduce the bills for winter. If your winter climate is cold and gloomy like Canberra can be, the grid will still have a use!
 
-# FoxESS Battery & Inverter
+## FoxESS Battery & Inverter
 A home battery comes in different shapes and sizes, depending on the manufacturer, but FoxESS batteries and inverters look something like the following:
 ![](homeBattery.png)
 
@@ -17,7 +17,7 @@ The batteries are stacked next to the yellow safety pole, and the inverter is th
 
 So: I'd like to be able to ask the inverter if the battery is empty and if so send me a notification to my phone. How will we make this happen?
 
-# Firstly, we are going to need a FoxESS API key
+## Firstly, we are going to need a FoxESS API key
 FoxESS has a V1 web portal here: [https://www.foxesscloud.com/login]()
 
 > **Note:** You will want to use their updated V2 portal for day to day use, but for this guide we will want to login to the V1 portal to get an API token. At the time of writing this guide, getting an API key is not obvious in the V2 portal.
@@ -30,7 +30,7 @@ FoxESS has a V1 web portal here: [https://www.foxesscloud.com/login]()
 3. In the API Management area, click on "Generate API key" and note it down somewhere safe
 ![](/assets/images/foxEssApiKey.png)
 
-# Next, how do you send a notification to a phone?
+## Next, how do you send a notification to a phone?
 One of the easiest ways to send a notification to a phone is to send a Push Notification. This type of notification is linked to an app, so best to use an existing notification app that is tailor made for this purpose. I went with an old-school basic option, [PushOver](https://pushover.net/), but if you want something fancier you could go with [PushCut](https://www.pushcut.io/). 
 
 With PushOver, you get an API key and you also send an email to a provided email address and the message will appear on your device. 
@@ -52,7 +52,7 @@ You will need to create an Application in Pushover
 The icon I used was:
 ![](/assets/images/EmptyBattery128x128.png)
 
-# Bringing it together: Battery Monitor with Notification
+## Bringing it together: Battery Monitor with Notification
 Let's go with Bash for this one.
 
 .env file (replace the value placeholders with your values)
@@ -102,6 +102,6 @@ fi
 You can then run the script on a schedule on your Mac and it will tell you when the battery is low.
 ![](/assets/images/pushNotificationLowBattery.png)
 
-# Optional Addition
+## Optional Addition
 If you are interested in this type of geeky stuff, I'd suggest that you bring this to the next level. I, for example, run mine using a cron schedule (every 30 minutes during the day) on my [Raspberry Pi Zero](https://www.raspberrypi.com/products/raspberry-pi-zero/). I like the Zero as it uses 0.5 watts when it is running normally and peaks at about 2 watts when under heavy usage. Its so efficient that I leave it running 24/7 without worrying about it wasting electricity.
 ![391](/assets/images/raspberryPiZero.png)
