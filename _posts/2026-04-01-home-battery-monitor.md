@@ -46,12 +46,12 @@ curl -s \
 ```
 
 You will need to create an Application in Pushover
-![](pushOverApplications.png)
+![](/assets/images/pushOverApplications.png)
 
-![](pushOverNewApplication.png)
+![](/assets/images/pushOverNewApplication.png)
 
 The icon I used was:
-![](EmptyBattery128x128.png)
+![](/assets/images/EmptyBattery128x128.png)
 
 # Bringing it together: Battery Monitor with Notification
 Let's go with Bash for this one.
@@ -101,5 +101,5 @@ fi
 ```
 
 You can then run the script on a schedule on your Mac and it will tell you when the battery is low.
-![](pushNotificationLowBattery.png)
+![](/assets/images/pushNotificationLowBattery.png)
 
