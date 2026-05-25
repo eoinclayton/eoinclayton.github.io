@@ -42,6 +42,31 @@
   margin-left: 1em;
 }
 
+.post-nav-top {
+  margin-bottom: 2em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #444;
+}
+
+.post-nav-bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3em;
+  padding-top: 1em;
+  border-top: 1px solid #444;
+}
+
+.post-nav-top a,
+.post-nav-bottom a {
+  color: #9ddcff;
+  text-decoration: none;
+}
+
+.post-nav-top a:hover,
+.post-nav-bottom a:hover {
+  text-decoration: underline;
+}
+
 details {
   margin-bottom: 1.5em;
 }

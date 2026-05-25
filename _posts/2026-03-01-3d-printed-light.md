@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 3D Printing
 date: 2026-03-01
 ---

@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<nav class="post-nav-top">
+  <a href="/">← Home</a>
+</nav>
+
+{{ content }}
+
+<nav class="post-nav-bottom">
+  {% if page.previous %}
+    <a href="{{ page.previous.url }}" class="nav-prev">← {{ page.previous.title }}</a>
+  {% else %}
+    <span></span>
+  {% endif %}
+  {% if page.next %}
+    <a href="{{ page.next.url }}" class="nav-next">{{ page.next.title }} →</a>
+  {% endif %}
+</nav>

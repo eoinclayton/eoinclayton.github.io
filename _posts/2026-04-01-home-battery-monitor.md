@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Home Battery Monitor
 date: 2026-04-01
 ---

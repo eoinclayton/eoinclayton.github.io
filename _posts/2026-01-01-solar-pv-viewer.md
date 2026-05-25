@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Solar PV Viewer
 date: 2026-01-01
 ---
