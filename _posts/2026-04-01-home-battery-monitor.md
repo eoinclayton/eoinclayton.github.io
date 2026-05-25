@@ -8,8 +8,7 @@ The Australian Government is currently (2026) providing a [Cheaper Home Batterie
 Using the program, we added a FoxESS home battery to the house and it has been great: we haven't needed to draw much electricity from the grid for 4+ months and ended up supplying energy to the grid when the grid needed it. 
 Now that it's winter in Canberra, Australia (think cold and gloomy), the battery does sometimes run low and during those periods I want to know when it has run out of charge so that I can adjust my usage (e.g. avoid the dryer!).
 
-> [!NOTE]
-> For those who are interested in getting a battery, it looks like for us the battery will supply the house comfortably for 9+ months of the year, and then reduce the bills for winter. If your winter climate is cold and gloomy like Canberra can be, the grid will still have a use!
+> **Note:** For those who are interested in getting a battery, it looks like for us the battery will supply the house comfortably for 9+ months of the year, and then reduce the bills for winter. If your winter climate is cold and gloomy like Canberra can be, the grid will still have a use!
 
 # FoxESS Battery & Inverter
 A home battery comes in different shapes and sizes, depending on the manufacturer, but FoxESS batteries and inverters look something like the following:
@@ -20,13 +19,12 @@ The batteries are stacked next to the yellow safety pole, and the inverter is th
 So: I'd like to be able to ask the inverter if the battery is empty and if so send me a notification to my phone. How will we make this happen?
 
 # Firstly, we are going to need a FoxESS API key
-FoxESS has a V1 web portal here: https://www.foxesscloud.com/login
+FoxESS has a V1 web portal here: [https://www.foxesscloud.com/login]()
 
-> [!NOTE]
-> You will want to use their updated V2 portal for day to day use, but for this guide we will want to login to the V1 portal to get an API token. At the time of writing this guide, getting an API key is not obvious in the V2 portal.
+> **Note:** You will want to use their updated V2 portal for day to day use, but for this guide we will want to login to the V1 portal to get an API token. At the time of writing this guide, getting an API key is not obvious in the V2 portal.
 
 1. Navigate to the Inverter area and note down your Inverter SN (Serial Number):
-![](foxEssInverterSerialNumber.png)
+![](/assets/images/foxEssInverterSerialNumber.png)
 2. After you login, click on the Avatar at the top left:
 ![](/assets/images/foxEssCloudHomepage.png)
 
