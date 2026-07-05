@@ -94,8 +94,20 @@ Things to check in the HTML: `{{ }}` expressions survived; every `<pre>` sits in
 `<li>`; each section is one continuous `<ol>` (not fragmented into several restarting at 1);
 images are `<img src="/assets/images/…">`.
 
+## Build config gotcha: root `.md` files get built
+
+The `github-pages` gem bundles `jekyll-optional-front-matter`, so **every root-level `.md`
+file is run through Liquid + kramdown even with no front matter** — including tooling docs
+like this `CLAUDE.md` and any `README.md`. Because this file contains literal `{% raw %}`
+examples, Liquid tries to parse them as real tags and the build fails with
+`'raw' tag was never closed`. Such files are excluded via `exclude:` in `_config.yml`.
+If you add another non-post `.md` at the repo root, add it to that list. (`.claude/` needs no
+excluding — Jekyll ignores dot-directories.) Setting `exclude` replaces Jekyll's default list,
+so `Gemfile` et al. are repeated there.
+
 ## Conventions
 
 - Images: root-absolute `/assets/images/…`, kebab-case filenames, no spaces.
 - Post filenames: `YYYY-MM-DD-slug.md`, dated the 1st of the month in this blog's cadence.
+- Non-post markdown at the repo root must be added to `exclude:` in `_config.yml` (see above).
 - Don't commit or push unless asked. This repo publishes on push to the default branch.

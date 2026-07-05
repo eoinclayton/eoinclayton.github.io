@@ -93,7 +93,7 @@ For Github Actions, in your repo navigate to Settings -> Secrets and variables -
 
    export const test = base.extend({
      context: async ({ context }, use) => {
-       // Only attach the credential to our own (gated) hosts, and only when it's set.
+       // Only attach the credential to our own (gated) hosts
        if (clientId && clientSecret) {
          await context.route(
            (url) => url.hostname.endsWith('.example.com'),

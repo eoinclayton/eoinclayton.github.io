@@ -13,3 +13,19 @@ plugins:
   - jekyll-seo-tag
 
 permalink: /:year/:month/:day/:title/
+
+# Files that are not part of the published site. Setting `exclude` replaces
+# Jekyll's default list, so the standard build files are repeated here.
+# CLAUDE.md / README.md are tooling docs — without excluding them the
+# jekyll-optional-front-matter plugin runs them through Liquid, which chokes on
+# the literal {% raw %} examples inside CLAUDE.md. (.claude/ is already ignored
+# as a dot-directory.)
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .sass-cache
+  - .jekyll-cache
+  - node_modules
+  - CLAUDE.md
+  - README.md
