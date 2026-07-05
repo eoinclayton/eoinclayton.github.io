@@ -20,6 +20,7 @@ E.g. you can secure:
 It's much more flexible and the good news is that it is [free to set up with Cloudflare](https://www.cloudflare.com/en-au/plans/zero-trust-services/)
 
 > **Note:** ZTN is an evolving space within Cloudflare. I found that the various AIs including Gemini, Claude and Copilot all gave wrong information on how to set it up. I even found Cloudflare's own documentation was out of date. The following guide works mid-2026.
+
 ## How to enable in Cloudflare
 1. Enable Zero Trust on your account. It will ask for a credit card, but it is free to use
 2. Give your team a suitable name. It's going to be "{something}.cloudflareaccess.com", and the {something} name will be globally unique. E.g. "home" will probably already be taken.
