@@ -2,6 +2,7 @@
 layout: post
 title: ZTN - CI/CD Testing
 date: 2026-07-01
+description: How to authenticate CI/CD pipelines against a Cloudflare Zero Trust protected site using Service Credentials, with examples for Newman/Postman, Bruno, and Playwright.
 ---
 In the previous Zero Trust Networking (ZTN) posts, we explored how we can add security to secure sensitive areas of your website. We saw how we can require users to auth via an identity provider, and how we can require users to be on authorised devices.
 
@@ -10,11 +11,11 @@ Where does that leave your CI/CD build and deployment system though? I typically
 The answer is to put in place "Service Credentials".
 
 ## Setup a Service Credential
-1. Navigate to Access Controls -> Service Credentials and add a service token ![](/assets/images/pasted-image-20260705113650.png)
-2. Give the token an appropriate name and generate the token ![](/assets/images/pasted-image-20260705113710.png)
+1. Navigate to Access Controls -> Service Credentials and add a service token ![Cloudflare Access Service Credentials page with Add a service token button](/assets/images/pasted-image-20260705113650.png)
+2. Give the token an appropriate name and generate the token ![Cloudflare form for naming and generating a new service token](/assets/images/pasted-image-20260705113710.png)
 3. Save the Client Id and Client Secret securely! Once you navigate away, you won't be able to see it again and will have to regenerate it
-4. Navigate to Access Controls -> Applications, click in to your application and add a second policy. Include the Service Token that you just created, and make the Action be "Service Auth" ![](/assets/images/pasted-image-20260705113729.png)
-5. Save the new policy and save the application. You should then have at least two policies: one for the CI/CD system (Service Auth) and one for staff/human use. Note: the order doesn't matter for Service Auth policies: Cloudflare treats Service Auth policies as higher priority than other policy types ![](/assets/images/pasted-image-20260705114048.png)
+4. Navigate to Access Controls -> Applications, click in to your application and add a second policy. Include the Service Token that you just created, and make the Action be "Service Auth" ![Cloudflare Access policy configured with Service Auth action using the new service token](/assets/images/pasted-image-20260705113729.png)
+5. Save the new policy and save the application. You should then have at least two policies: one for the CI/CD system (Service Auth) and one for staff/human use. Note: the order doesn't matter for Service Auth policies: Cloudflare treats Service Auth policies as higher priority than other policy types ![Cloudflare Access application showing both a Service Auth policy and a staff login policy](/assets/images/pasted-image-20260705114048.png)
 
 ## Configure your CI/CD runner
 I use Github Actions for the CI/CD flow these days. Your CI/CD runner will follow a similar approach.

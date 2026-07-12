@@ -3,8 +3,18 @@ email: eoinclayton@hotmail.com
 description: Notes on software, systems, and what the docs leave out.
 url: "https://blog.eoinclayton.com"
 baseurl: ""
+lang: en_US
 
 author: Eoin Clayton
+logo: /assets/images/favicon-512.png
+
+social:
+  name: Eoin Clayton
+  links:
+    - https://github.com/eoinclayton
+
+# Google Search Console verification uses the HTML-file method — see
+# google948f932aac3b94e8.html at the repo root, not a config key.
 
 # No theme — fully custom layouts/CSS ("instrument panel" design, see _layouts/
 # and assets/css/style.scss). Do not re-add a theme; it would override _layouts.
@@ -12,6 +22,7 @@ author: Eoin Clayton
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
 
 permalink: /:year/:month/:day/:title/
 

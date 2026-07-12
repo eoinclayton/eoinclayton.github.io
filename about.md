@@ -2,6 +2,7 @@
 layout: page
 title: About
 permalink: /about/
+description: About Eoin Clayton, a software engineer in Canberra, Australia writing about software, systems, and hands-on engineering projects.
 ---
 
 This blog is where I write about software, systems, and the corners of both that

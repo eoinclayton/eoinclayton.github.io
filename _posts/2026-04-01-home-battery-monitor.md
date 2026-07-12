@@ -2,6 +2,7 @@
 layout: post
 title: Home Battery Monitor
 date: 2026-04-01
+description: Using the FoxESS Open API and a Bash script to monitor home battery charge and send a Pushover phone notification when the battery runs low.
 ---
 The Australian Government is currently (2026) providing a [Cheaper Home Batteries Program](https://www.dcceew.gov.au/energy/programs/cheaper-home-batteries) scheme to help with home battery adoption. The more houses that install home batteries, the less pressure there will be on the electrical grid and so hopefully electricity prices will drop for all.
 Using the program, we added a FoxESS home battery to the house and it has been great: we haven't needed to draw much electricity from the grid for 4+ months and ended up supplying energy to the grid when the grid needed it. 
@@ -11,7 +12,7 @@ Now that it's winter in Canberra, Australia (think cold and gloomy), the battery
 
 ## FoxESS Battery & Inverter
 A home battery comes in different shapes and sizes, depending on the manufacturer, but FoxESS batteries and inverters look something like the following:
-![](homeBattery.png)
+![FoxESS home battery stack and inverter installed next to a yellow safety pole](/assets/images/homeBattery.png)
 
 The batteries are stacked next to the yellow safety pole, and the inverter is the smaller box above them. Similar to the Solar PV inverter discussed in [Solar PV Viewer](/2026/01/01/solar-pv-viewer/), the battery inverter will take the DC stored electricity and convert to AC for use by the house.
 
@@ -23,12 +24,12 @@ FoxESS has a V1 web portal here: [https://www.foxesscloud.com/login]()
 > **Note:** You will want to use their updated V2 portal for day to day use, but for this guide we will want to login to the V1 portal to get an API token. At the time of writing this guide, getting an API key is not obvious in the V2 portal.
 
 1. Navigate to the Inverter area and note down your Inverter SN (Serial Number):
-![](/assets/images/foxEssInverterSerialNumber.png)
+![FoxESS Cloud inverter page showing the device serial number](/assets/images/foxEssInverterSerialNumber.png)
 2. After you login, click on the Avatar at the top left:
-![](/assets/images/foxEssCloudHomepage.png)
+![FoxESS Cloud homepage with the account avatar menu open](/assets/images/foxEssCloudHomepage.png)
 
 3. In the API Management area, click on "Generate API key" and note it down somewhere safe
-![](/assets/images/foxEssApiKey.png)
+![FoxESS Cloud API Management page with the Generate API key button](/assets/images/foxEssApiKey.png)
 
 ## Next, how do you send a notification to a phone?
 One of the easiest ways to send a notification to a phone is to send a Push Notification. This type of notification is linked to an app, so best to use an existing notification app that is tailor made for this purpose. I went with an old-school basic option, [PushOver](https://pushover.net/), but if you want something fancier you could go with [PushCut](https://www.pushcut.io/). 
@@ -45,12 +46,12 @@ curl -s \
 ```
 
 You will need to create an Application in Pushover
-![](/assets/images/pushOverApplications.png)
+![Pushover applications list in the account dashboard](/assets/images/pushOverApplications.png)
 
-![](/assets/images/pushOverNewApplication.png)
+![Pushover create new application form](/assets/images/pushOverNewApplication.png)
 
 The icon I used was:
-![](/assets/images/EmptyBattery128x128.png)
+![Empty battery icon used for the Pushover application](/assets/images/EmptyBattery128x128.png)
 
 ## Bringing it together: Battery Monitor with Notification
 Let's go with Bash for this one.
@@ -100,8 +101,8 @@ fi
 ```
 
 You can then run the script on a schedule on your Mac and it will tell you when the battery is low.
-![](/assets/images/pushNotificationLowBattery.png)
+![Phone push notification showing a low home battery state of charge alert](/assets/images/pushNotificationLowBattery.png)
 
 ## Optional Addition
 If you are interested in this type of geeky stuff, I'd suggest that you bring this to the next level. I, for example, run mine using a cron schedule (every 30 minutes during the day) on my [Raspberry Pi Zero](https://www.raspberrypi.com/products/raspberry-pi-zero/). I like the Zero as it uses 0.5 watts when it is running normally and peaks at about 2 watts when under heavy usage. Its so efficient that I leave it running 24/7 without worrying about it wasting electricity.
-![391](/assets/images/raspberryPiZero.png)
+![Raspberry Pi Zero used to run the battery monitor script on a schedule](/assets/images/raspberryPiZero.png)

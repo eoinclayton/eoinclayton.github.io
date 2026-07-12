@@ -2,12 +2,13 @@
 layout: post
 title: Zero Trust Networking (ZTN)
 date: 2026-05-01
+description: An introduction to Zero Trust Networking and a step-by-step guide to securing a website for free with Cloudflare Access, using an identity provider for login.
 ---
 Zero Trust Networking (ZTN) is a cybersecurity framework built on the principle of "never trust, always verify". Unlike legacy castle-and-moat models, it assumes attackers are already inside the network. It authenticates, authorises, and continuously validates every user, device, and application before granting access to resources.
 ## What did the older VPN based security model look like?
-With the older VPN approach, you put in place a strong perimeter to try to stop attackers getting into your systems. However, if an attacker found a weak spot somewhere they would be inside the perimeter: ![](/assets/images/pasted-image-20260705110120.png)
+With the older VPN approach, you put in place a strong perimeter to try to stop attackers getting into your systems. However, if an attacker found a weak spot somewhere they would be inside the perimeter: ![Diagram of a legacy perimeter security model with a single trusted boundary](/assets/images/pasted-image-20260705110120.png)
 ## How is Zero Trust Networking different?
-You can still have a perimeter, but with ZTN you don't require or trust that perimeter anymore. You instead put a perimeter on everything, adopting a "zero trust" mindset, trusting no-one. Every time a user wants to access an internal system, the user is verified to make sure they have access: ![](/assets/images/pasted-image-20260705110135.png)
+You can still have a perimeter, but with ZTN you don't require or trust that perimeter anymore. You instead put a perimeter on everything, adopting a "zero trust" mindset, trusting no-one. Every time a user wants to access an internal system, the user is verified to make sure they have access: ![Diagram of a zero trust model verifying every access request individually](/assets/images/pasted-image-20260705110135.png)
 ## What does that mean in practice?
 You no longer need a VPN or extensive networking experience.
 You can also secure a website, or even part of a website on the internet.
@@ -24,12 +25,12 @@ It's much more flexible and the good news is that it is [free to set up with Clo
 ## How to enable in Cloudflare
 1. Enable Zero Trust on your account. It will ask for a credit card, but it is free to use
 2. Give your team a suitable name. It's going to be "{something}.cloudflareaccess.com", and the {something} name will be globally unique. E.g. "home" will probably already be taken.
-3. You will need an identity provider to login with. Go to Integrations -> Identity Providers and add a suitable provider. You could start with the Cloudflare provided One-time PIN to get you going. Users will be sent a pin number to their email address when they hit your website ![](/assets/images/pasted-image-20260705110223.png)
-4. In the web portal, navigate to Access Controls -> Applications and Add an Application ![](/assets/images/pasted-image-20260705110237.png)
-5. My sites are Cloudflare hosted and I went with "Self hosted" and "Public DNS" ![](/assets/images/pasted-image-20260705110251.png)
-6. In the following screen, add the hostnames and add an Access Policy to restrict to the allowed logins to be your expected email, or more usefully to emails that end in your email domain ![](/assets/images/pasted-image-20260705111419.png)
-7. You can also set the Session Duration to something you can live with. Too short and it will be too annoying, too long and it might be less secure ![](/assets/images/pasted-image-20260705111445.png)
-8. Try to hit your site. You should be prompted to login. Users who fail to login will be blocked ![](/assets/images/pasted-image-20260705110521.png)
+3. You will need an identity provider to login with. Go to Integrations -> Identity Providers and add a suitable provider. You could start with the Cloudflare provided One-time PIN to get you going. Users will be sent a pin number to their email address when they hit your website ![Cloudflare Zero Trust Identity Providers configuration screen](/assets/images/pasted-image-20260705110223.png)
+4. In the web portal, navigate to Access Controls -> Applications and Add an Application ![Cloudflare Access Applications page with Add an Application button](/assets/images/pasted-image-20260705110237.png)
+5. My sites are Cloudflare hosted and I went with "Self hosted" and "Public DNS" ![Cloudflare Access application type selection: Self-hosted with Public DNS](/assets/images/pasted-image-20260705110251.png)
+6. In the following screen, add the hostnames and add an Access Policy to restrict to the allowed logins to be your expected email, or more usefully to emails that end in your email domain ![Cloudflare Access policy configuration restricting login by email domain](/assets/images/pasted-image-20260705111419.png)
+7. You can also set the Session Duration to something you can live with. Too short and it will be too annoying, too long and it might be less secure ![Cloudflare Access session duration setting](/assets/images/pasted-image-20260705111445.png)
+8. Try to hit your site. You should be prompted to login. Users who fail to login will be blocked ![Cloudflare Access login prompt shown when visiting the protected site](/assets/images/pasted-image-20260705110521.png)
 
 
 > **Note — Include your .pages.dev sites if you are hosting via Cloudflare**

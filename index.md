@@ -1,5 +1,7 @@
 ---
 layout: default
+title: Technicalities 2.0
+description: Notes on software, systems, and what the docs leave out — practical write-ups on home automation, Zero Trust networking, AI agents, and hands-on engineering projects.
 ---
 
 <section class="hero">

@@ -2,11 +2,12 @@
 layout: post
 title: 3D Printing
 date: 2026-03-01
+description: Using AI (Claude, Copilot, and CADQuery) to redesign a Thingiverse cauldron STL model into a custom enclosure for a Delcom USB notification light, then 3D printing it.
 ---
 A previous post described how I use a Delcom USB light to alert me to workplace notifications: PRs ready for review, Production incidents underway, etc.
 
 The light works great, it's just very... industrial... looking. 
-![312](/assets/images/delcomLight.png)
+![Delcom 904017-B USB notification light, industrial-looking on its own](/assets/images/delcomLight.png)
 
 Lets see if we can make it look better! 
 
@@ -15,7 +16,7 @@ Delcom doesn't provide a nice container for the light, as far as I'm aware.
 Years ago when 3d printing was just getting going, I downloaded a "Makies Cauldron" model. It has a Creative Commons Attribution license and you can find it here: https://www.thingiverse.com/thing:178670 . 
 
 The model in the provided STL file looks a bit like this:
-![](/assets/images/cauldronSTL.png)
+![3D model of the Makies Cauldron STL file](/assets/images/cauldronSTL.png)
 
 [Download MAKIES_Cauldron.stl](/assets/images/MAKIES_Cauldron.stl)
 
@@ -54,7 +55,7 @@ Please generate a CadQuery script for me and I'll apply the script at my side to
 </details>
 
 Then, as VSCode is my tool of choice, I installed the "OCP CAD Viewer" extension in VSCode and had Claude manipulate the Python file. Claude is more than happy to code in Python. I would take a screenshot of the current state of the model, tell it what I wanted to be changed and it would update the Python script to change the STL file. OCP CAD Viewer would then display the updated STL file:
-![](/assets/images/vscodeCad.png)
+![OCP CAD Viewer in VSCode showing the edited cauldron model](/assets/images/vscodeCad.png)
 
 There was a LOT of back and forth but we got there in the end.
 ## The model is ready. How to print?
@@ -67,4 +68,4 @@ Watch this space! I'll upload a photo shortly
 
 ## Final thoughts
 Having the Delcom usb light in its cauldron seems to have fulfilled some long-buried cultural desire from my Irish background: I finally have my very own... Pot of Gold!
-![](/assets/images/potOfGold.png)
+![Finished 3D-printed cauldron enclosure with the USB light installed](/assets/images/potOfGold.png)
