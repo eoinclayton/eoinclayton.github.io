@@ -138,8 +138,10 @@ a:hover { color: var(--amber); }
 .matrix {
   position: relative;
   width: 100%;
-  /* Height is set by the script from the dot grid; reserve space to avoid jump */
-  min-height: 220px;
+  /* Height is set by the script from the dot grid. This approximates the JS
+     layout formula (27 rows * min(13, contentWidth / 91)) across viewport
+     widths so the reserved space matches the real render and avoids CLS. */
+  min-height: clamp(80px, 29.7vw - 14px, 247px);
 }
 
 .matrix canvas {
