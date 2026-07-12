@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% seo %}
+  {% include head-custom.html %}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..700&family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+
+  <header class="site-nav">
+    {% if page.url == "/" %}
+      <span class="nav-brand nav-brand-home" aria-hidden="true">●●●</span>
+    {% else %}
+      <a class="nav-brand" href="{{ '/' | relative_url }}">Technicalities 2.0</a>
+    {% endif %}
+    <nav class="nav-links">
+      <a href="{{ '/' | relative_url }}">Index</a>
+      <a href="{{ '/about/' | relative_url }}">About</a>
+      <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
+    </nav>
+  </header>
+
+  <main class="site-main">
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="dot-rule" aria-hidden="true"></div>
+    <div class="footer-row">
+      <span>© {{ site.time | date: "%Y" }} Eoin Clayton</span>
+      <span class="footer-links">
+        <a href="https://github.com/eoinclayton">GitHub</a>
+        <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
+      </span>
+    </div>
+  </footer>
+
+  <script src="{{ '/assets/js/dotmatrix.js' | relative_url }}" defer></script>
+</body>
+</html>

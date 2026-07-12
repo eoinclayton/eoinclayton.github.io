@@ -1,7 +1,9 @@
 # Blog (GitHub Pages + Jekyll)
 
 Personal tech blog "Technicalities 2.0" — served at https://blog.eoinclayton.com via
-**GitHub Pages** (Jekyll, `jekyll-theme-midnight`). Posts are written in **Obsidian**
+**GitHub Pages** (Jekyll, no theme — fully custom "instrument panel" design: custom
+`_layouts/`, `assets/css/style.scss`, and a canvas dot-matrix hero in
+`assets/js/dotmatrix.js`). Posts are written in **Obsidian**
 first (see `.obsidian/`) and then committed here, so posts routinely arrive with
 Obsidian-flavoured syntax that Jekyll does not understand. The single most common task
 in this repo is proofreading a new post and converting that syntax.
@@ -11,7 +13,10 @@ in this repo is proofreading a new post and converting that syntax.
 - `_posts/YYYY-MM-DD-slug.md` — the posts. Front matter is `layout: post`, `title:`, `date:`.
 - `assets/images/` — post images. Referenced as `![](/assets/images/<file>.png)` (root-absolute).
 - `_config.yml` — Jekyll config. Markdown is kramdown with the **GFM** input parser (GitHub Pages default).
-- `_layouts/`, `index.md`, `about.md` — theme/layout plumbing. Rarely touched.
+- `_layouts/` — custom layouts: `default.html` (shell: nav/footer/fonts), `post.html`, `page.html`.
+- `assets/css/style.scss` — the whole design system (front-mattered SCSS; Jekyll emits `style.css`).
+- `assets/js/dotmatrix.js` — homepage dot-matrix hero (boot sweep, cursor field) + index glyph badges.
+- `index.md`, `about.md` — homepage (hero + log index) and about page.
 
 ## The rendering pipeline (why "valid markdown" can still render wrong)
 

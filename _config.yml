@@ -6,7 +6,8 @@ baseurl: ""
 
 author: Eoin Clayton
 
-theme: jekyll-theme-midnight
+# No theme — fully custom layouts/CSS ("instrument panel" design, see _layouts/
+# and assets/css/style.scss). Do not re-add a theme; it would override _layouts.
 
 plugins:
   - jekyll-feed
