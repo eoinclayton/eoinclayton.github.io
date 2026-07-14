@@ -1,0 +1,22 @@
+---
+permalink: /llms.txt
+---
+# {{ site.title }}
+
+> {{ site.description }} Written by {{ site.author }}, a software engineer based in Canberra, Australia. Posts are short, practical write-ups on home automation, Zero Trust networking, AI agents, and hands-on engineering projects.
+
+This file follows the llms.txt convention (https://llmstxt.org) to help language models and AI agents discover the site's content.
+
+## Posts
+{% for post in site.posts %}
+- [{{ post.title }}]({{ post.url | absolute_url }}): {{ post.description }}
+{%- endfor %}
+
+## About
+
+- [About]({{ '/about/' | absolute_url }}): About {{ site.author }} and this blog.
+
+## Feeds
+
+- [Atom feed]({{ '/feed.xml' | absolute_url }}): Full-content Atom feed of all posts.
+- [Sitemap]({{ '/sitemap.xml' | absolute_url }}): XML sitemap of every page.
