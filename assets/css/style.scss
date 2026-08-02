@@ -70,6 +70,8 @@ a:hover { color: var(--amber); }
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  flex-wrap: wrap;
+  gap: 12px 32px;
   padding-top: 28px;
   font-family: var(--font-mono);
   font-size: 13px;
@@ -80,6 +82,7 @@ a:hover { color: var(--amber); }
 .nav-brand {
   color: var(--text);
   text-decoration: none;
+  white-space: nowrap;
 }
 .nav-brand:hover { color: var(--amber); }
 
@@ -510,6 +513,13 @@ code {
   .log-title { font-size: 16px; }
   .log-date { font-size: 12px; }
   .log-leader { margin: 0 2px; }
+  /* Brand + links don't fit on one line at phone widths — stack them
+     rather than let the brand wrap into the links. */
+  .site-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
   .nav-links { gap: 18px; }
   .post-nav { flex-direction: column; }
   .post-nav-link { max-width: 100%; }
