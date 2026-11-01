@@ -1,8 +1,8 @@
 ---
 layout: post
 date: 2026-11-01
-title: "#1 Hit Song For Your App"
-description: How to make a music video for your app/site
+title: "#1 Hit Song"
+description: How to make a music video for your app/site/product/brand
 ---
 In the [previous post]({% post_url 2026-10-01-promo-video %}), I described my latest app [Agent Aqua](https://agentaqua.net/) and how I felt that some captivating videos were needed for Marketing. With Claude & OpenRouter's help, we made some promo videos.
 
