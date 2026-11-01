@@ -47,6 +47,6 @@ Here also is part of Claude's thought process. Glad it wasn't me figuring this o
 ## Result
 Check out the result! A-qua! A-qua!
 
-<video controls playsinline preload="metadata" src="https://media.agentaqua.net/film/agent-aqua-water-or-skip-v1-1080p-r2.mp4">
+<video controls playsinline preload="metadata" width="1920" height="1080" poster="/assets/images/poster-agent-aqua-song.jpg" src="https://media.agentaqua.net/film/agent-aqua-water-or-skip-v1-1080p-r2.mp4">
   <a href="https://media.agentaqua.net/film/agent-aqua-water-or-skip-v1-1080p-r2.mp4">Watch the Agent Aqua music video</a>
 </video>

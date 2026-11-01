@@ -41,7 +41,7 @@ Firstly, we need a video to describe what the app does. I used the following pro
 
 Check out the result!
 
-<video controls playsinline preload="metadata" src="https://media.agentaqua.net/film/agent-aqua-film-v1.mp4">
+<video controls playsinline preload="metadata" width="1920" height="1080" poster="/assets/images/poster-agent-aqua-film.jpg" src="https://media.agentaqua.net/film/agent-aqua-film-v1.mp4">
   <a href="https://media.agentaqua.net/film/agent-aqua-film-v1.mp4">Watch the Agent Aqua film</a>
 </video>
 
@@ -50,7 +50,7 @@ Check out the result!
 
 > I need a 30s-60s real-life style advertisement with appropriate audio for https://agentaqua.net/ .
 
-<video controls playsinline preload="metadata" src="https://media.agentaqua.net/film/agent-aqua-ad-real.mp4">
+<video controls playsinline preload="metadata" width="1920" height="1080" poster="/assets/images/poster-agent-aqua-ad-real.jpg" src="https://media.agentaqua.net/film/agent-aqua-ad-real.mp4">
   <a href="https://media.agentaqua.net/film/agent-aqua-ad-real.mp4">Watch the realistic Agent Aqua ad</a>
 </video>
 
@@ -65,7 +65,7 @@ As an example, let's go with French-speaking retired Parisian artists :) Just re
 
 ...and boom!
 
-<video controls playsinline preload="metadata" src="https://media.agentaqua.net/film/agent-aqua-pub-paris-60s-16x9.mp4">
+<video controls playsinline preload="metadata" width="1920" height="1080" poster="/assets/images/poster-agent-aqua-paris.jpg" src="https://media.agentaqua.net/film/agent-aqua-pub-paris-60s-16x9.mp4">
   <a href="https://media.agentaqua.net/film/agent-aqua-pub-paris-60s-16x9.mp4">Watch the Agent Aqua Paris ad</a>
 </video>
 

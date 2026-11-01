@@ -341,7 +341,7 @@ a:hover { color: var(--amber); }
   border-radius: 3px;
 }
 .prose img { display: block; margin: 0.8em 0; } // images often share a paragraph or list item with text
-.prose video { display: block; margin: 0 0 1.2em; }
+.prose video { display: block; width: 100%; margin: 0 0 1.2em; background: var(--panel); }
 
 .prose ul, .prose ol { padding-left: 1.4em; margin: 0 0 1.2em; }
 .prose li { margin-bottom: 0.35em; }
