@@ -1,7 +1,7 @@
 title: Technicalities 2.0
 email: eoinclayton@hotmail.com
 description: Notes on software, systems, and what the docs leave out.
-url: "https://blog.eoinclayton.com"
+url: "https://eoinclayton.com"
 baseurl: ""
 lang: en_US
 
@@ -26,6 +26,14 @@ plugins:
   - jekyll-sitemap
 
 permalink: /:year/:month/:day/:title/
+
+# Fallback share image (og:image) for link previews on LinkedIn etc. A post can
+# override it with its own `image:` front matter.
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/images/og-image.png
 
 # Files that are not part of the published site. Setting `exclude` replaces
 # Jekyll's default list, so the standard build files are repeated here.

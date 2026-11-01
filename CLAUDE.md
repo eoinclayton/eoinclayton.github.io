@@ -1,6 +1,6 @@
 # Blog (GitHub Pages + Jekyll)
 
-Personal tech blog "Technicalities 2.0" — served at https://blog.eoinclayton.com via
+Personal tech blog "Technicalities 2.0" — served at https://eoinclayton.com via
 **GitHub Pages** (Jekyll, no theme — fully custom "instrument panel" design: custom
 `_layouts/`, `assets/css/style.scss`, and a canvas dot-matrix hero in
 `assets/js/dotmatrix.js`). Posts are written in **Obsidian**
