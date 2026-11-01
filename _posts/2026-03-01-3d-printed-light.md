@@ -7,13 +7,13 @@ description: Using AI (Claude, Copilot, and CADQuery) to redesign a Thingiverse 
 A previous post described how I use a Delcom USB light to alert me to workplace notifications: PRs ready for review, Production incidents underway, etc.
 
 The light works great, it's just very... industrial... looking. 
-![Delcom 904017-B USB notification light, industrial-looking on its own](/assets/images/delcomLight.png)
+![Delcom 904017-B USB notification light, industrial-looking on its own](/assets/images/delcomLight.png){: width="320"}
 
-Lets see if we can make it look better! 
+Let's see if we can make it look better! 
 
 ## 3D Model
 Delcom doesn't provide a nice container for the light, as far as I'm aware.
-Years ago when 3d printing was just getting going, I downloaded a "Makies Cauldron" model. It has a Creative Commons Attribution license and you can find it here: https://www.thingiverse.com/thing:178670 . 
+Years ago when 3d printing was just getting going, I downloaded a "Makies Cauldron" model. It has a Creative Commons Attribution license and you can find it here: [Thingiverse](https://www.thingiverse.com/thing:178670)
 
 The model in the provided STL file looks a bit like this:
 ![3D model of the Makies Cauldron STL file](/assets/images/cauldronSTL.png)
@@ -65,7 +65,3 @@ I uploaded the model, chose PETG in black as the "filament" (i.e. the material f
 ## How does it look?
 
 Watch this space! I'll upload a photo shortly
-
-## Final thoughts
-Having the Delcom usb light in its cauldron seems to have fulfilled some long-buried cultural desire from my Irish background: I finally have my very own... Pot of Gold!
-![Finished 3D-printed cauldron enclosure with the USB light installed](/assets/images/potOfGold.png)

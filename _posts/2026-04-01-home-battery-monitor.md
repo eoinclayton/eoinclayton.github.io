@@ -5,7 +5,9 @@ date: 2026-04-01
 description: Using the FoxESS Open API and a Bash script to monitor home battery charge and send a Pushover phone notification when the battery runs low.
 ---
 The Australian Government is currently (2026) providing a [Cheaper Home Batteries Program](https://www.dcceew.gov.au/energy/programs/cheaper-home-batteries) scheme to help with home battery adoption. The more houses that install home batteries, the less pressure there will be on the electrical grid and so hopefully electricity prices will drop for all.
+
 Using the program, we added a FoxESS home battery to the house and it has been great: we haven't needed to draw much electricity from the grid for 4+ months and ended up supplying energy to the grid when the grid needed it. 
+
 Now that it's winter in Canberra, Australia (think cold and gloomy), the battery does sometimes run low and during those periods I want to know when it has run out of charge so that I can adjust my usage (e.g. avoid the dryer!).
 
 > **Note:** For those who are interested in getting a battery, it looks like for us the battery will supply the house comfortably for 9+ months of the year, and then reduce the bills for winter. If your winter climate is cold and gloomy like Canberra can be, the grid will still have a use!
@@ -19,7 +21,7 @@ The batteries are stacked next to the yellow safety pole, and the inverter is th
 So: I'd like to be able to ask the inverter if the battery is empty and if so send me a notification to my phone. How will we make this happen?
 
 ## Firstly, we are going to need a FoxESS API key
-FoxESS has a V1 web portal here: [https://www.foxesscloud.com/login]()
+FoxESS has a V1 web portal here: [https://www.foxesscloud.com/login](https://www.foxesscloud.com/login)
 
 > **Note:** You will want to use their updated V2 portal for day to day use, but for this guide we will want to login to the V1 portal to get an API token. At the time of writing this guide, getting an API key is not obvious in the V2 portal.
 
@@ -104,5 +106,5 @@ You can then run the script on a schedule on your Mac and it will tell you when 
 ![Phone push notification showing a low home battery state of charge alert](/assets/images/pushNotificationLowBattery.png)
 
 ## Optional Addition
-If you are interested in this type of geeky stuff, I'd suggest that you bring this to the next level. I, for example, run mine using a cron schedule (every 30 minutes during the day) on my [Raspberry Pi Zero](https://www.raspberrypi.com/products/raspberry-pi-zero/). I like the Zero as it uses 0.5 watts when it is running normally and peaks at about 2 watts when under heavy usage. Its so efficient that I leave it running 24/7 without worrying about it wasting electricity.
+If you are interested in this type of geeky stuff, I'd suggest that you bring this to the next level. I, for example, run mine using a cron schedule (every 30 minutes during the day) on my [Raspberry Pi Zero](https://www.raspberrypi.com/products/raspberry-pi-zero/). I like the Zero as it uses 0.5 watts when it is running normally and peaks at about 2 watts when under heavy usage. It's so efficient that I leave it running 24/7 without worrying about it wasting electricity.
 ![Raspberry Pi Zero used to run the battery monitor script on a schedule](/assets/images/raspberryPiZero.png)
