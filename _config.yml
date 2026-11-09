@@ -34,6 +34,12 @@ defaults:
       path: ""
     values:
       image: /assets/images/og-image.png
+  # Keep the Search Console verification file out of sitemap.xml — it's not a
+  # page Google should index.
+  - scope:
+      path: google948f932aac3b94e8.html
+    values:
+      sitemap: false
 
 # Files that are not part of the published site. Setting `exclude` replaces
 # Jekyll's default list, so the standard build files are repeated here.
